@@ -13,7 +13,7 @@ for i in tickers.index:
     option = Options(i,'yahoo')
     data = option.get_all_data()
 
-    if len(data[data.Vol] )> 0:
+    if len(data[data.Vol].all )> 0:
 
         if (data[data.Vol > 1000].all): #sys.getsizeof(data[data.Vol > 1000].all) != 0:
 
